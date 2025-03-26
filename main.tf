@@ -9,7 +9,7 @@ resource "aws_instance" "my-instance" {
   instance_type = "t2.micro"
 
   tags = {
-   Name = "ec2 instance1"
+   Name = "ec2 instance2"
   }
 } 
 

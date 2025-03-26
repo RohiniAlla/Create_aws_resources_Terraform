@@ -1,4 +1,4 @@
-provider "registry.terraform.io/hashicorp/aws" {
+provider "hashicorp/aws" {
   region = "us-west-1"
   access_key = "AWS_ACCESS_KEY_ID"
   secret_key = "AWS_SECRET_ACCESS_KEY"
@@ -20,6 +20,17 @@ resource "aws_s3_bucket" "my_s3_bucket" {
     Name = "mys3buckettes"
   }
 }
+
+data "aws_vpc" "default"{
+  default = "true"
+}
+
+resource "aws_security_group" "blog" {
+  name = "blog"
+  description = "allow all traffic"
+  vpc_id = data.aws_vpc.default.id
+}
+
 
 
 

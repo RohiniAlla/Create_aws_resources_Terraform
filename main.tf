@@ -17,10 +17,10 @@ resource "aws_instance" "my-instance" {
 } 
 
 resource "aws_s3_bucket" "my_s3_bucket" {
-  bucket = "mys3buckettes"
+  bucket = "myterras3bucket"
   #acl = "private"
   tags = {
-    Name = "mys3buckettes"
+    Name = "myterras3bucket"
   }
 }
 

@@ -16,11 +16,11 @@ resource "aws_instance" "my-instance" {
   }
 } 
 
-resource "aws_s3_bucket" "mybucketterraforms3" {
-  bucket = "mybucketterraforms3"
+resource "aws_s3_bucket" "mys3bucketdev" {
+  bucket = "mys3bucketdev"
   #acl = "private"
   tags = {
-    Name = "mybucketterraforms3"
+    Name = "mys3bucketdev"
   }
 }
 

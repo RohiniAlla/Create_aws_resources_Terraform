@@ -16,7 +16,7 @@ resource "aws_instance" "my-instance" {
   }
 } 
 
-resource "aws_s3_bucket" "my_s3_bucket" {
+resource "aws_s3_bucket" "myterras3bucket" {
   bucket = "myterras3bucket"
   #acl = "private"
   tags = {
